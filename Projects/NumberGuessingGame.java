@@ -22,16 +22,16 @@ public class NumberGuessingGame {
                 if (guess == RandomNum) {
                     System.out.println("Right ACCEPTED!");
                 } else if (guess < RandomNum) {
-                    System.out.println("Wrong! Number Is Greater Than " + guess);
+                    System.out.println("Wrong! Number Is Greater Than " + guess +" Try Again");
                 } else {
-                    System.out.println("Wrong! Number Is Smaller Than " + guess);
+                    System.out.println("Wrong! Number Is Smaller Than " + guess +" Try Again");
                 }
             }else{
                 System.out.println("Number must be Between (1-100) :");
             }
             count++;
         }
-        System.out.println("GREAT You have DONE In "+count + " Tries");
+        System.out.println("GREAT! You have DONE In "+count + " Attempts");
         sc.close();
     }
 }
